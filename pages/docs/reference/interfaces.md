@@ -34,6 +34,26 @@ class Child : MyInterface {
 }
 ```
 
+An interface may extend another interface to add more members or override the existing ones, providing default implementations. A class that implements such an interface also needs to provide implementations for all members of the superinterfaces that have no default:
+
+``` kotlin
+interface Named {
+    val id: Int
+    val name: String
+}
+
+interface NamedPerson : Named {
+    val firstName: String
+    val lastName: String
+    
+    override val name: String get() = "$firstName $lastName$
+}
+
+class Citizen : NamedPerson {
+    // Needs to implement `id`, `firstName`, and `lastName`
+}
+```
+
 ## Properties in Interfaces
 
 You can declare properties in interfaces. A property declared in an interface can either be abstract, or it can provide
