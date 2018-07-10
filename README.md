@@ -9,23 +9,23 @@ This is the source for the [http://kotlinlang.org](http://kotlinlang.org).
 - [Writing content](#writing-content)
 - [Filing bugs](#filing-bugs)
 
-## Installation
+## 설치
 
-1. You will need Docker to run site lifecycle tasks. Installation for [macOS](https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac) and 
+1. 사이트를 실행하기 위해서는 Docker 가 필요합니다. [macOS](https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac) 와 
    [Windows](https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows).
-2. If you want to develop frontend Yarn package manager is also needed ([installation instructions](https://yarnpkg.com/lang/en/docs/install/)).
-   Don't forget to install frontend dependencies - `yarn install`.
-3. All specific app parameters stored in env-file. Copy sample file `.env.sample` and rename it to `.env`. 
-   Change variables values if needed.
+2. 프론트엔드를 개발할 생각이라면, Yarn 패키지 매니저도 필요합니다. ([설치 방법](https://yarnpkg.com/lang/en/docs/install/)).
+   프론트엔드 디펜던시도 같이 설치하는 것을 잊지 마세요. - `yarn install`.
+3. 모든 상세한 앱 파라미터는 env-file 에 저장되어 있습니다. `.env.sample` 샘플 파일을 복사하여 `.env` 로 이름을 바꾸어 주세요.
+   필요한 값을 변경하시면 됩니다.
 
-## How to run
+## 실행방법
 
-- **All in one option (suitable for content authors/writers)**:
-  - `docker-compose up`. It will build all stuff and create site on [localhost:5000](http://localhost:5000).
-- **Developer has 2-step option**:
-  - `docker-compose up website` will run only site at [localhost:5000](http://localhost:5000).
-  - `yarn start` will run webpack-dev-server on [localhost:9000](http://localhost:9000).
-     This address should be used for development. All pages from origin server will be proxied.
+- **한번에 실행하는 옵션(컨텐츠 저자에게 맞는 방법)**:
+  - `docker-compose up`. 모든 환경을 설정하고 [localhost:5000](http://localhost:5000) 에 사이트를 생성합니다.
+- **개발자를 위한 2단계 옵션**:
+  - `docker-compose up website` 명령은 [localhost:5000](http://localhost:5000) 에 서버만 동작시킵니다.
+  - `yarn start` 명령은 webpack-dev-server 를[localhost:9000](http://localhost:9000) 위에 실행시킵니다.
+     이 주소는 개발용도로만 쓰여야 합니다. 원본 서버에서부터 온 모든 페이지는 프록시될 것입니다.
      
 <a id="project-structure"></a>
 ## Project structure & overview
