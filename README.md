@@ -23,16 +23,16 @@ This is the source for the [http://kotlinlang.org](http://kotlinlang.org).
 - **한번에 실행하는 옵션(컨텐츠 저자에게 맞는 방법)**:
   - `docker-compose up`. 모든 환경을 설정하고 [localhost:5000](http://localhost:5000) 에 사이트를 생성합니다.
 - **개발자를 위한 2단계 옵션**:
-  - `docker-compose up website` 명령은 [localhost:5000](http://localhost:5000) 에 서버만 동작시킵니다.
-  - `yarn start` 명령은 webpack-dev-server 를[localhost:9000](http://localhost:9000) 위에 실행시킵니다.
-     이 주소는 개발용도로만 쓰여야 합니다. 원본 서버에서부터 온 모든 페이지는 프록시될 것입니다.
+  - `docker-compose up website` 명령은 [localhost:5000](http://localhost:5000) 에 서버를 실행시킵니다.
+  - `yarn start` 명령은 webpack-dev-server 를 [localhost:9000](http://localhost:9000) 에 실행시킵니다.
+     이 주소는 개발용도로만 쓰여야 합니다. 원본 서버에서 온 모든 페이지는 프록시됩니다.
      
 <a id="project-structure"></a>
-## Project structure & overview
+## 프로젝트 구조 & 개괄
 
-### Data
+### 데이터
 
-All data is stored in the \*.yml files in folder `_data`:
+모든 데이터는 `_data` 폴더 내의 \*.yml 파일에 있습니다. :
 
 - [_nav.yml](_data/_nav.yml) site navigation and PDF building.
 - [releases.yml](_data/releases.yml) info about releases.
