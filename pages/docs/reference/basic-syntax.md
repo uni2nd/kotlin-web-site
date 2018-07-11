@@ -131,6 +131,7 @@ fun main(args: Array<String>) {
 최상위레벨 변수:
 
 <div class="sample" markdown="1">
+
 ``` kotlin
 //sampleStart
 val PI = 3.14
