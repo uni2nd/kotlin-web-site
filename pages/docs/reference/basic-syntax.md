@@ -2,14 +2,14 @@
 type: doc
 layout: reference
 category: "Basics"
-title: "Basic Syntax"
+title: "기본 문법"
 ---
 
-# Basic Syntax
+# 기본 문법
 
-## Defining packages
+## 패키지 선언
 
-Package specification should be at the top of the source file:
+패키지 선언은 소스 파일의 최상단에 하셔야 합니다:
 
 ``` kotlin
 package my.demo
@@ -19,13 +19,13 @@ import java.util.*
 // ...
 ```
 
-It is not required to match directories and packages: source files can be placed arbitrarily in the file system.
+디렉토리와 패키지 구조를 굳이 맞추지 않아도 됩니다: 소스 파일은 파일 시스템의 어디에나 있을 수 있습니다.
 
-See [Packages](packages.html).
+[패키지](packages.html) 문서를 참고하세요.
 
-## Defining functions
+## 함수(functions) 선언
 
-Function having two `Int` parameters with `Int` return type:
+두 개의 `Int` 파라미터와 `Int` 반환 타입을 가진 함수:
 
 <div class="sample" markdown="1">
 
@@ -43,7 +43,7 @@ fun main(args: Array<String>) {
 ```
 </div>
 
-Function with an expression body and inferred return type:
+식 본문과 유추 반환 타입을 가진 함수:
 
 <div class="sample" markdown="1">
 
@@ -58,7 +58,7 @@ fun main(args: Array<String>) {
 ```
 </div>
 
-Function returning no meaningful value:
+반환값이 (의미)없는 함수:
 
 <div class="sample" markdown="1">
 
@@ -75,7 +75,7 @@ fun main(args: Array<String>) {
 ```
 </div>
 
-`Unit` return type can be omitted:
+`Unit` 반환 타입은 명시하지 않아도 됩니다:
 
 <div class="sample" markdown="1">
 
@@ -92,11 +92,11 @@ fun main(args: Array<String>) {
 ```
 </div>
 
-See [Functions](functions.html).
+[함수](functions.html) 문서를 참고하세요.
 
-## Defining variables
+## 변수 선언
 
-Assign-once (read-only) local variable:
+불변(읽기 전용) 지역 변수:
 
 <div class="sample" markdown="1">
 
@@ -113,7 +113,7 @@ fun main(args: Array<String>) {
 ```
 </div>
 
-Mutable variable:
+가변 변수:
 
 <div class="sample" markdown="1">
 
@@ -128,7 +128,7 @@ fun main(args: Array<String>) {
 ```
 </div>
 
-Top-level variables:
+최상위레벨 변수:
 
 <div class="sample" markdown="1">
 ``` kotlin
@@ -150,12 +150,12 @@ fun main(args: Array<String>) {
 ```
 </div>
 
-See also [Properties And Fields](properties.html).
+[프로퍼티와 필드](properties.html) 문서를 참고하세요.
 
 
-## Comments
+## 주석
 
-Just like Java and JavaScript, Kotlin supports end-of-line and block comments.
+코틀린도 자바나 자바스크립트처럼 1줄 주석, 블럭 주석을 지원합니다.
 
 ``` kotlin
 // This is an end-of-line comment
@@ -164,11 +164,11 @@ Just like Java and JavaScript, Kotlin supports end-of-line and block comments.
    on multiple lines. */
 ```
 
-Unlike Java, block comments in Kotlin can be nested.
+코틀린의 블럭 주석은 자바와는 달리 중첩해서 쓸 수 있습니다.
 
-See [Documenting Kotlin Code](kotlin-doc.html) for information on the documentation comment syntax.
+문서화를 위한 주석 문법 내용은 [코틀린 코드 문서화하기](kotlin-doc.html) 문서를 참고하세요.
 
-## Using string templates
+## 문자열 템플릿 사용하기
 
 <div class="sample" markdown="1">
 
@@ -188,9 +188,9 @@ fun main(args: Array<String>) {
 ```
 </div>
 
-See [String templates](basic-types.html#string-templates).
+[문자열 템플릿](basic-types.html#string-templates) 문서를 참고하세요.
 
-## Using conditional expressions
+## 조건식 사용하기
 
 
 <div class="sample" markdown="1">
@@ -213,7 +213,7 @@ fun main(args: Array<String>) {
 </div>
 
 
-Using *if*{: .keyword } as an expression:
+*if*{: .keyword } 를 식처럼 사용:
 
 <div class="sample" markdown="1">
 
@@ -228,9 +228,9 @@ fun main(args: Array<String>) {
 ```
 </div>
 
-See [*if*{: .keyword }-expressions](control-flow.html#if-expression).
+[*if*{: .keyword }-expressions](control-flow.html#if-expression) 문서를 참고하세요.
 
-## Using nullable values and checking for *null*{: .keyword }
+## 널(null)이 가능한 변수 사용 & *널*{: .keyword } 확인법
 
 A reference must be explicitly marked as nullable when *null*{: .keyword } value is possible.
 
