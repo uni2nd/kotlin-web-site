@@ -192,7 +192,6 @@ fun main(args: Array<String>) {
 
 ## 조건식 사용하기
 
-
 <div class="sample" markdown="1">
 
 ``` kotlin
